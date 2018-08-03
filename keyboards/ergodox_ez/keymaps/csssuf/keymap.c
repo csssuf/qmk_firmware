@@ -59,10 +59,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |        |  F1  |  F2  |  F3  |  F4  |  F5  |  ~   |           |      |  F6  |  F7  |  F8  |  F9  |  F10 |   F11  |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |        |  !   |  @   |  #   |  $   |  %   |      |           |      |      |  =   |  -   |  _   |  +   |   \    |
+ * |        |  !   |  @   |  #   |  $   |  %   | PgUp |           |      |      |  =   |  -   |  _   |  +   |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        |  ^   |  &   |  *   |  :   |  ~   |------|           |------|  (   |  )   |  [   |  ]   |  :   |   '    |
- * |--------+------+------+------+------+------| PgDn |           | PgUp |------+------+------+------+------+--------|
+ * |--------+------+------+------+------+------| PgDn |           | F12  |------+------+------+------+------+--------|
  * |        |  \   |  |   |  '   |  "   |  ?   |      |           |      |  {   |  }   |  <   |  >   |  ?   |  Calc  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   |      |      |      |      |      |                                       |      |      |      |      |      |
@@ -78,11 +78,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // SYMBOLS
 [SYMB] = LAYOUT_ergodox(
        // left hand
-       KC_TRNS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_TILD,
-       KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_TRNS,
-       KC_TRNS, KC_CIRC, KC_AMPR, KC_ASTR, KC_COLN, KC_TILD,
-       KC_TRNS, KC_BSLS, KC_PIPE, KC_QUOT, KC_DQUO, KC_QUES, KC_PGDN,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_GRAVE, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_TILD,
+       KC_TRNS,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_PGUP,
+       KC_TRNS,  KC_CIRC, KC_AMPR, KC_ASTR, KC_COLN, KC_TILD,
+       KC_TRNS,  KC_BSLS, KC_PIPE, KC_QUOT, KC_DQUO, KC_QUES, KC_PGDN,
+       KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
                                        KC_TRNS, KC_TRNS,
                                                 KC_TRNS,
                               KC_TRNS, KC_TRNS, KC_TRNS,
@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
        KC_TRNS, KC_TRNS, KC_EQL,  KC_MINS, KC_UNDS, KC_PLUS, KC_BSLS,
                 KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC, KC_COLN, KC_QUOT,
-       KC_PGUP, KC_LCBR, KC_RCBR, KC_LT,   KC_GT,   KC_QUES, KC_CALC,
+       KC_F12,  KC_LCBR, KC_RCBR, KC_LT,   KC_GT,   KC_QUES, KC_CALC,
                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS,
        KC_TRNS,
